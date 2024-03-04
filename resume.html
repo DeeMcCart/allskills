@@ -93,13 +93,7 @@
                     <div class="timeline-item" data-dates="02/1993 - 03/2000">
                         <h4>ERP Implementation Consultant</h4>
                         <p>Marcam Solutions Ltd</p>
-                    </div>
-                    
-                    <div class="timeline-item" data-dates="09/1989 - 02/1993">
-                        <h4>Computer Development Analyst</h4>
-                        <p>Carlsberg Tetley Brewers</p>
-                    </div>
-                    
+                    </div>                    
                 </div>
             </div>
 
@@ -263,7 +257,54 @@
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a5acd5b07c.js" crossorigin="anonymous"></script>
+    
+    <!-- DMcC 04/03/24:  The below is needed to activate emailjs -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- DMcC 04/03/24:  The below is needed to initiate emailjs-->
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: EMAILJS_PUBLIC_KEY,
+            });
+        })();
+    </script>
 
+    <script type="text/javascript">
+        // CONTACT FORM - content below from emailjs:
+        window.onload = function() {
+            const btn = document.getElementById('button');
+            document.getElementById('form').addEventListener('submit', function(event) {
+            alert('send button pressed!')
+            event.preventDefault();
+        
+            btn.value = 'Sending...';
+        
+            const serviceID = 'default_service';
+            const templateID = 'template_lqq1mif';
+        
+            emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, this)
+            .then(() => {
+                btn.value = 'Send Email';
+                alert('Sent!');
+            }, (err) => {
+                btn.value = 'Send Email';
+                alert(JSON.stringify(err));
+            });
+            });
+        }
+      </script>
+      <script type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+      </script>
+      <script type="text/javascript">
+        (function(){
+            emailjs.init({
+            publicKey: "YOUR_PUBLIC_KEY",
+            });
+        })();
+      </script>
+    
 </body>
 
 </html>
