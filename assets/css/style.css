@@ -18,7 +18,8 @@
 }
 
 .bg-color-name-title {
-    background-color: #676767;
+background-color: #676767; 
+/*    background-color: royalblue; */
 }
 
 .bg-color-three-reasons {
@@ -62,11 +63,14 @@ header {
 
 /* ----------------------------------------Background image */
 .logo {
-    background-image: url("../images/deirdre_home_office.jpg");
+    background-image: url("../images/allskills-logo.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 360px;
+    /* background-size: cover; */
+    background-size: contain;
+    width: 200px;
+    min-height: auto;
+    /* min-height: 250px; */
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
