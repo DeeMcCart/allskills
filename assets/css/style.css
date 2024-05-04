@@ -68,7 +68,7 @@ header {
     background-repeat: no-repeat;
     /* background-size: cover; */
     background-size: contain;
-    width: 200px;
+    width: 150px;
     min-height: auto;
     /* min-height: 250px; */
     transition: all .5s ease-in-out;
@@ -321,7 +321,8 @@ footer {
     display: block;
     font-family: "Exo", sans-serif;
     font-weight: 500;
-    font-size: 0.8em;
+    /* DMcC 04/05/24:  reduce font-size from 0.8 to 0.6em */
+    font-size: 0.6em;
     padding: 0;
     margin: 0;
 }
