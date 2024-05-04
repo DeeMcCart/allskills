@@ -89,7 +89,8 @@ header {
     font-weight: 200;
     font-size: 28px;
     margin-top: 20px;
-    margin-bottom: 90px;
+    /* DMcC 04/05/24 reduce lower margin from 90px */
+    margin-bottom: 30px;
     color: #fff;
 }
 
