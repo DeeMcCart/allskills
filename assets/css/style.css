@@ -340,6 +340,17 @@ footer {
     background: #fafafa;
 }
 
+.timeline-item>h4{
+    /* DMcC 04/05/24:  reduce font-size to 0.6em */
+    font-size: 0.9em;
+} 
+
+.timeline-item>p{
+    /* DMcC 04/05/24:  reduce font-size to 0.6em */
+    font-size: 0.8em;
+} 
+
+
 .history-items {
     margin-bottom: 30px;
 }
