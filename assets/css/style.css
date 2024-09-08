@@ -382,6 +382,29 @@ button[type="submit"] {
     background-color: #e84610;
 }
 
+
+/* Buttons and associated show-hide controls */
+.btn-signup {
+    background-color: grey;
+    color: #fff;
+    background-color: mediumpurple;
+    max-width: 50px;
+    max-height: 20px;
+    font-size: 0.5em;
+}
+
+.btn-signup:hover,
+.btn-signup:active {
+    background-color: #fff;
+    color: #1c9797;
+    }
+
+.hide-field,
+.hide-div {
+    display:none;
+    }
+
+
 /* ----------------------------------------Media Queries */
 @media(min-width: 992px) {
 

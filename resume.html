@@ -117,46 +117,64 @@
                             <a target="_blank" href="https://code-institute-433215.uc.r.appspot.com/clientui/#chatbotend">
                                 <img class = "project-icon" src="assets/images/homeie_logo_blue.png">
                                 <b> AI - achieve secure longterm housing</b></a> 
-                             
+                                <p>
+                                    <i>1st Place (Regional: Huckletree)</i>
+                                    <input type="button" class="btn btn-signup right" id="project1-button" value = "More..." onclick="show_hide_project1()">
+                                </p>
+                                <div class = "container-fluid hide-div" id="project1-container">
                                     <ul>  
-                                    <li>What mortgage can I afford?</li>
-                                    <li>Housing estates planned near me?</li>
-                                    <li>Explain First-time buyer supports</li>
-                                    <li>Am I eligible?</li>
-                                    <li>Trained Google knowledge models</li>
-                                    with international & Irish datasets
+                                        <li>What mortgage can I afford?</li>
+                                        <li>Housing estates planned near me?</li>
+                                        <li>Explain First-time buyer supports</li>
+                                        <li>Am I eligible?</li>
+                                        <li>Trained Google knowledge models</li>
+                                        with international & Irish datasets
                                     </ul>
-                                
-                            <p><i>1st Place TechIreland/ Google/ OpenAI Hackathon: 6-7 person CI team  (regional: Huckletree) .</i></p>  
-                            <p><i>Team Lead Seán Meade achieved runner-up at National AI Challenge 30/08/24.</i></p>
-                            <p></p>
+                                    
+                            <p><i>1st Place TechIreland/ Google/ OpenAI Hackathon: 6-7 person CI team  (regional: Huckletree)</i></p>  
+                            <p><i>Team Lead Seán Meade: runner-up at National AI Challenge 30/08/24.</i></p>
+                        </div>
+                        <p></p>
                             <a target="_blank" href="https://infinity-hub-15161149b9fb.herokuapp.com/">
                                 <img class = "project-icon" src="assets/images/infinity_hub_logo.png">
                                 <b>Neurodiverse Females: Info & Support</b>
                             </a> 
-                            
-                            <ul>  
-                            <li>Lifestage Hormonal fluctuation</li> 
-                            <li>Menarche, pregnancy, postnatal, menopause</li>
-                            <li>Broadcast (articles)</li>
-                            <li>Peer-to-peer (private discussion forum)</li>
-                            <li>Masking/undiagnosed</li>
-                            <li>User-controlled progressive disclosure</li>
-                            </ul>
-                            
-                            <i>1st place at Trust in Soda/ CI/ Google UK 4-day hackathon April 24, 6-person team</i>
+                            <p>
+                                <i>1st Place (Code Institute, London)</i>
+                                <input type="button" class="btn btn-signup right" id="project2-button" value = "More..." onclick="show_hide_project2()">
+                            </p>
+                        <div class = "container-fluid hide-div" id="project2-container">
+                                
+                                <ul>  
+                                <li>Lifestage Hormonal fluctuation</li> 
+                                <li>Menarche, pregnancy, postnatal, menopause</li>
+                                <li>Broadcast (articles)</li>
+                                <li>Peer-to-peer (private discussion forum)</li>
+                                <li>Masking/undiagnosed</li>
+                                <li>User-controlled progressive disclosure</li>
+                                </ul>
+                                
+                                <i>1st place at Trust in Soda/ CI/ Google UK 4-day hackathon April 24, 6-person team</i>
+                            </div>
 
                             <p></p>
                             <a target="_blank" href="https://stef-cruz.github.io/power-up-point/index.html">
                                 <img class = "project-icon" src="assets/images/power_up_point_logo.png">
-                                <b>Locate Charging Points, Fast!</b></a>
-                            <ul>  
-                                <li>proof-of-concept website</li>
-                                <li>assist EV drivers in locating charge points</li>
-                                    from multiple providers
-                                <li>navigate from user's location to CP</li>
-                            </ul>
-                            <i>1st place at Code Institute/Trust in Soda 5-day hackathon Sept 2023, 6-person team</i>
+                                <b>Locate Charging Points, Fast!</b>
+                            </a>
+                            <p>
+                                <i>1st Place (Code Institute, Dublin)</i>
+                                <input type="button" class="btn btn-signup right" id="project3-button" value = "More..." onclick="show_hide_project3()">
+                            </p>
+                            <div class = "container-fluid hide-div" id="project3-container">
+                                <ul>  
+                                    <li>proof-of-concept website</li>
+                                    <li>assist EV drivers in locating charge points</li>
+                                        from multiple providers
+                                    <li>navigate from user's location to CP</li>
+                                </ul>
+                                <i>1st place at Code Institute/Trust in Soda 5-day hackathon Sept 2023, 6-person team</i>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -367,6 +385,54 @@
             publicKey: "YOUR_PUBLIC_KEY",
             });
         })();
+      </script>
+      <script>
+        function show_hide_project1() {
+        show_project1_button = document.getElementById("project1-button");
+        console.log("current value of show/hide button is " + show_project1_button.value);
+        if (show_project1_button.value == "More...") {
+            document.getElementById("project1-container").classList.remove("hide-div");
+            console.log("Removed class hide-div from project1-container")
+            show_project1_button.value="Hide...";
+            }  
+        else 
+            {
+            document.getElementById("project1-container").classList.add("hide-div");
+            console.log("Added class hide-div to project1-container")
+            show_project1_button.value="More...";
+            }  
+        }
+        function show_hide_project2() {
+        show_project2_button = document.getElementById("project2-button");
+        console.log("current value of show/hide button is " + show_project2_button.value);
+        if (show_project2_button.value == "More...") {
+            document.getElementById("project2-container").classList.remove("hide-div");
+            console.log("Removed class hide-div from project1-container")
+            show_project2_button.value="Hide...";
+            }  
+        else 
+            {
+            document.getElementById("project2-container").classList.add("hide-div");
+            console.log("Added class hide-div to project2-container")
+            show_project2_button.value="More...";
+            }  
+        }
+        function show_hide_project3() {
+        show_project3_button = document.getElementById("project3-button");
+        console.log("current value of show/hide button is " + show_project3_button.value);
+        if (show_project3_button.value == "More...") {
+            document.getElementById("project3-container").classList.remove("hide-div");
+            console.log("Removed class hide-div from project3-container")
+            show_project3_button.value="Hide...";
+            }  
+        else 
+            {
+            document.getElementById("project3-container").classList.add("hide-div");
+            console.log("Added class hide-div to project3-container")
+            show_project3_button.value="More...";
+            }  
+        }
+
       </script>
     
 </body>
