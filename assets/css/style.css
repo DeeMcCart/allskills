@@ -251,7 +251,8 @@ footer {
     line-height: 7px;
     text-align: center;
     color: #fafafa;
-    background: #8f8f8f;
+    /* background: #8f8f8f; */
+    background-color: blue;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
@@ -261,15 +262,18 @@ footer {
 
 
 .social-links li a i:hover {
-    background-color: #e84610;
+    background-color: #3498db;
 }
 
 /* -----------------------------Three Reasons */
-.three-reasons-icon {
+.three-reasons-icon, .project-icon {
     font-size: 26px;
     color: #e67e22;
 }
 
+.project-icon {
+    max-height:25px;
+}
 .three-reasons-heading {
     margin-bottom: 15px;
 }
